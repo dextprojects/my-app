@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import studentTable from 'studentTable'
 
 class StudentInfoForm extends React.Component{
   render(){

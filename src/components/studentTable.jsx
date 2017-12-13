@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class studentTable extends React.Component{
   constructor(){
@@ -8,19 +7,19 @@ class studentTable extends React.Component{
       data:
        [
         {
-               "id":1,
-               "name":"Foo",
-               "age":"20"
-            },
-            {
-               "id":2,
-               "name":"Bar",
-               "age":"30"
-            },
-            {
-               "id":3,
-               "name":"Baz",
-               "age":"40"
+           "id":1,
+           "name":"Foo",
+           "age":"20"
+        },
+        {
+           "id":2,
+           "name":"Bar",
+           "age":"30"
+        },
+        {
+           "id":3,
+           "name":"Baz",
+           "age":"40"
         }
       ]
     }
@@ -50,3 +49,5 @@ class TableRow extends React.Component {
       );
    }
 }
+
+export default studentTable;
