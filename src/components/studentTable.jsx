@@ -1,7 +1,7 @@
 import React from 'react';
 
-class studentTable extends React.Component{
-  constructor(){
+class studentTable extends React.Component {
+  constructor() {
     super();
     this.state = {
       data:
@@ -24,8 +24,8 @@ class studentTable extends React.Component{
       ]
     }
   }
-    render(){
-      return(
+    render() {
+      return (
         <div>
           <table>
               <tbody>
