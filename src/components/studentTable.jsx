@@ -5,32 +5,25 @@ class StudentTable extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: [
-        {
-          "id": 1,
-          "name": "Foo",
-          "age": "20"
-        }, {
-          "id": 2,
-          "name": "Bar",
-          "age": "30"
-        }, {
-          "id": 3,
-          "name": "Baz",
-          "age": "40"
-        }
-      ]
+      data: [{'id': 1, 'name': 'abc', 'age': 25}]
     }
   }
   render() {
     return (<div>
-      <table className='stuTable' cellspacing='4' cellpadding='5' align='center'>
+      <table className='stuTable' cellSpacing='4' cellPadding='5' align='center'>
         <tbody>
-          {this.state.data.map((person, i) => <TableRow key={i} data={person}/>)}
+          {console.log('Data: '+JSON.stringify(this.state.data))}
+
         </tbody>
       </table>
     </div>);
   }
+
+  componentDidMount() {
+      fetch('http://localhost:8087/react/service/getTableData/').then(result => {
+        this.setState({data: result});
+      });
+    }
 }
 
 export default StudentTable;
