@@ -6,5 +6,5 @@ import StudnetInfoForm from './components/StudentInfoForm.jsx';
 import registerServiceWorker from './registerServiceWorker';
 import StudentTable from './components/StudentTable.jsx'
 
-ReactDOM.render(<StudnetInfoForm />, document.getElementById('root'));
+ReactDOM.render( < StudnetInfoForm / > , document.getElementById('root'));
 registerServiceWorker();
