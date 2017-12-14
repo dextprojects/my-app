@@ -9,3 +9,10 @@ body {
   border: solid black 1px;
   background-color: #abcdef;
 }
+
+.stuTable {
+  margin-top: 10px;
+  align: center;
+  border: solid black 1px;
+  background-color: #abcdef;
+}

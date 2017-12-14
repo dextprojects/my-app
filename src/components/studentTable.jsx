@@ -1,6 +1,7 @@
 import React from 'react';
+import TableRow from './TableRow.jsx';
 
-class studentTable extends React.Component {
+class StudentTable extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -27,7 +28,7 @@ class studentTable extends React.Component {
     render() {
       return (
         <div>
-          <table>
+          <table className = 'stuTable' cellspacing = '4' cellpadding = '5' align = 'center'>
               <tbody>
                   {this.state.data.map((person, i) => <TableRow key = {i}
                      data = {person} />)}
@@ -38,16 +39,4 @@ class studentTable extends React.Component {
     }
 }
 
-class TableRow extends React.Component {
-   render() {
-      return (
-         <tr>
-            <td>{this.props.data.id}</td>
-            <td>{this.props.data.name}</td>
-            <td>{this.props.data.age}</td>
-         </tr>
-      );
-   }
-}
-
-export default studentTable;
+export default StudentTable;

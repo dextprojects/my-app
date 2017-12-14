@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import StudnetInfoForm from './components/StudentInfoForm';
+import StudnetInfoForm from './components/StudentInfoForm.jsx';
 import registerServiceWorker from './registerServiceWorker';
-import studentTable from './components/studentTable.jsx'
+import StudentTable from './components/StudentTable.jsx'
 
-ReactDOM.render(<studentTable />, document.getElementById('root'));
+ReactDOM.render(<StudnetInfoForm />, document.getElementById('root'));
 registerServiceWorker();
