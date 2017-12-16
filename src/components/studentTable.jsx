@@ -5,7 +5,13 @@ class StudentTable extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: [{'id': 1, 'name': 'abc', 'age': 25}]
+      data: [
+        {
+          'id': 1,
+          'name': 'abc',
+          'age': 25
+        }
+      ]
     }
   }
   render() {
